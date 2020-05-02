@@ -2,6 +2,7 @@ const express = require('express');
 var txtomp3 = require("text-to-mp3");
 const fs = require('fs');
 const path = require('path');
+const webshot = require('webshot');
 const body = require('body-parser');
 
 const app = express();
@@ -38,6 +39,11 @@ app.post('/generate', (req, res) => {
     var file = fs.createWriteStream("./public/FileName.mp3"); // write it down the file
     file.write(binaryStream);
     file.end();
+
+    webshot('http://localhost:3000/','a.png' ,function(err){
+      if(err) throw err;
+      else console.log("SS done")
+    })
 
     res.render("index");
 
