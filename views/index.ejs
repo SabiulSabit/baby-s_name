@@ -150,7 +150,7 @@
     }
 
     .colorposition {
-      width: 120px;
+      width: 110px;
       /* height: 100px; */
       margin-left: 50%;
       transform: translate(-50%, 0);
@@ -221,19 +221,19 @@
       </div>
       <div class="col-lg-4">
         <p style="font-size: 20px;">Select a Background Image</p>
-        <input type="file" id="ii" name="" value="">
-        <p style="font-size: 20px; margin-top: 10px;">Click for image</p>
-        <button class="btn btn-lg btn-info" id='make' onclick="makeScreenshot();">Creat Image</button>
+        <input type="file" id="ii" name="" value="" style="margin-bottom: 20px;">
+        <!-- <p style="font-size: 20px; margin-top: 10px;">Click for image</p> -->
+        <button class="btn btn-lg btn-info" id='make' onclick="makeScreenshot();">Create Image</button>
 
-        <a id="a-download" class="btn btn-ml btn-success" style="display: none;">Download this screenshot</a>
-        <a href="/" id="editpic" class="btn btn-ml btn-primary" style="display: none;">Edit again</a>
+        <a id="a-download" class="btn btn-lg btn-success" style="display: none;">Download The File</a>
+        <a href="/" id="editpic" class="btn btn-lg btn-primary" >Edit again</a>
       </div>
 
     </div>
   </div>
 
 
-  <h2 class="text-center text-danger">Live Preview</h2>
+  <h2 class="text-center text-danger"> <b>Live Preview </b></h2>
 
 
   <div id="main">
@@ -291,8 +291,8 @@
 
           <div class="col-12">
             <div class="properties post-content" id="output">
-              <p class="text-center p-3" id="output1"><%=date%> <span style="margin-left: 5px;"><%=height%></span> <span
-                  style="margin-left: 5px;"><%=weight%></span> </p>
+              <p class="text-center p-3" id="output1"><%=date%> <span style="margin-left: 5px;"><%=height%>cm</span> <span
+                  style="margin-left: 5px;"><%=weight%>kg</span> </p>
             </div>
           </div>
 
