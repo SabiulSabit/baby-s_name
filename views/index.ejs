@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<base href="../public">
     <title>Convert Text to Voice</title>
     <!-- Font Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <!-- Font Roboto -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
 
-
+<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -19,22 +20,22 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
         integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+
+
     <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
+<script src="html2canvas.min.js"></script>
     <style>
         body {
             font-family: 'Raleway', 'Roboto';
-            /* background-color: whitesmoke; */
-            background: url('1.jpg')no-repeat center center fixed;
-            
-            background-attachment: fixed;
-            background-size: cover;
+            background-color: whitesmoke;
+            /* background: url('1.jpg')no-repeat center center fixed; */
+
         }
 
         .position {
@@ -52,55 +53,178 @@
             margin-left: 58%;
             transform: translate(-56%, 0);
         }
+        .properties p{
+          margin: 20px;
+        }
 
         p {
             float: left;
-            font-size: 20px;
-            margin: 20px;
+            /* font-size: 20px; */
+            /* margin: 20px; */
             font-family: 'Oswald', sans-serif;
         }
 
-        .btnposition {
-            margin-top: 20px;
-            margin-left: 64%;
-            transform: translate(-64%, 0);
-        }
         .wave{
             background-color: aquamarine !important;
         }
 
-            
-        
+.color1{
+  background-color: green;
+}
+.color2{
+  background-color: red;
+}
+.color3{
+  background-color: white;
+}
+.color4{
+  background-color: black;
+}
+.color5{
+  background-color: yellow;
+}
+.color6{
+  background-color: blue;
+}
+.color7{
+  background-color: #ff69af;
+}
+.color8{
+  background-color: #ff55ff;
+}
+.color9{
+  background-color: #bc64a4;
+}
+.color10{
+  background-color: #4d5a6b;
+}
+
+.infot{
+  margin-top: 30px;
+  margin-left: 50%;
+  transform: translate(-50%,0);
+
+}
+.infot input{
+  float: left;
+  margin: 5px;
+
+}
+.ri{
+  width: 100%;
+height: 600px;
+  /* background-color: red; */
+  /* background-attachment: fixed; */
+  background-size: cover;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.upor{
+  margin-top: 100px;
+}
+.infot a{
+  text-decoration: none;
+
+}
+.imgposition{
+  margin-left: 60%;
+  transform: translate(-60%,0);
+}
+.imgposition1{
+  /* margin-top: 20px; */
+  margin-left: 60%;
+  transform: translate(-50%,0);
+}
+
     </style>
 
 </head>
 
 <body>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-3 infot">
+      <p style="font-size: 20px; margin-left: 30px;">Text Color change: </p>
+      <input class="color1" type="submit" id="changeGreen" value="">
+      <input class="color2" type="submit" id="changeRed" value="">
+      <input class="color3" type="submit" id="changewhite" value="">
+      <input class="color4" type="submit" id="changeblack" value="">
+      <input class="color5" type="submit" id="changeyellow" value="">
+      <input class="color6" type="submit" id="changeblue" value="">
+      <input class="color7" type="submit" id="changepink" value="">
+      <input class="color8" type="submit" id="changeultpink" value="">
+      <input class="color9" type="submit" id="changepurple" value="">
+      <input class="color10" type="submit" id="changedodly" value="">
+      <p style="font-size: 20px;">Text size increase/decrease: </p>
+      <div class="text-size">
+          <div class="sizes decrease">
+              <!-- <input type="submit" class="btn btn-sm btn-primary fa fa-plus-circle" value=""> -->
+              <p><i class="fa fa-minus-circle" style="font-size: 35px; margin-left: 10px;"></i></p>
+          </div>
+          <div class="sizes increase">
+            <!-- <input type="submit" class="btn btn-sm btn-danger" value="increase"> -->
+            <p><i class="fa fa-plus-circle" style="font-size: 35px; margin-left: 10px;"></i></p>
+          </div>
+        </div>
+      </div>
+
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-4 imgposition">
+      <p style="font-size: 20px;">Select a Background Image</p>
+       <input type="file" id="ii" name="" value="">
+
+            </div>
+
+
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+
+                <div class="col-4 imgposition1">
+                  <button class="btn btn-ml btn-info" id='make' onclick="makeScreenshot();">Creat Image</button>
+                  <p style="font-size: 20px; margin-right: 10px;">Download image</p>
+                    <a id="a-download" class="btn btn-ml btn-success" style="display: none;">Download this screenshot</a>
+                </div>
+  </div>
+</div>
+
+
+<div id="main">
+        <div  id="screenshot">
     <div class="container">
-        <div class="row">
-            <a href="1.jpg" download="GFG"> 
-                <button type="button">Download</button> 
-            </a> 
-            <div class="col-12">
+        <div class="row ri">
+
+
+            <div class="col-12 upor">
+
+
                 <span class="text-center" id="hide">
-                    <h1 class=" m-5" style="color: aliceblue; font-weight: 600;">Text to Audio Soundwave</h1>
-                    <br> <br>
-                    <div class="position"  hidden> 
+
+
+                    <div class="position"  hidden>
                         <span class="text-center" style="font-size: 20px;">Select Voice:</span> <select class="center text-white"
                             name="" id="voiceList"></select>
                     </div>
                     <br>
                     <form action="/generate" method="POST">
-                        <h3 class="text-center text-white" style="color: aliceblue; font-weight: 600;">Baby's Name</h3>
+
+                        <p class="text-white post-content" id="output" style="margin-left: 50%; font-weight: 600; transform: translate(-50%, 0);"><%=name%></p>
 
 
                         <input style="width: 300px;height: 40px;" type="text" id="inputText"
-                            placeholder="Baby's Name" name="msg">
+                            placeholder="Baby's Name" name="msg" hidden>
 
+                        <div class="df" hidden>
+                          <button class="btn btn-success" id="btnSpeak" hidden>Generate</button>
+                        </div>
 
-                        <br>
-                        <br>
-                        <button class="btn btn-success " id="btnSpeak">Generate</button>
                     </form>
                 </span>
             </div>
@@ -114,23 +238,20 @@
 
             <div class="btnposition">
 
-
-                <button style="font-size: 20px;" type="button" id="btn-play" disabled="disabled"> <i class="fa fa-play"
+                <button style="font-size: 20px;" type="button" id="btn-play" disabled="disabled" hidden> <i class="fa fa-play"
                         style="font-size: 25px;"> </i> Play</button>
-                <button style="font-size: 20px;" type="button" id="btn-pause" disabled="disabled"> <i
+                <button style="font-size: 20px;" type="button" id="btn-pause" disabled="disabled" hidden> <i
                         class="fa fa-pause" style="font-size: 25px;"> </i> Pause</button>
-                <button style="font-size: 20px;" type="button" id="btn-stop" disabled="disabled"> <i class="fa fa-stop"
+                <button style="font-size: 20px;" type="button" id="btn-stop" disabled="disabled" hidden> <i class="fa fa-stop"
                         style="font-size: 25px;"> </i> Stop</button>
-
-
             </div>
 
             <div class="col-12">
-                <div class="properties">
-                    <p class="text-center" style="color: aliceblue;">May,01,2020</p>
-                    <p style="color: aliceblue;">Time</p>
-                    <p style="color: aliceblue;" >Weight</p>
-                    <p style="color: aliceblue;">Height</p>
+                <div class="properties post-content" id="output">
+                    <p id="output1" class="text-center"><%=date%></p>
+                    <p id="output3"><%=height%></p>
+                    <p id="output4"><%=weight%></p>
+
                 </div>
             </div>
 
@@ -138,8 +259,13 @@
 
         </div>
     </div>
+  </div>
+</div>
+
+
     <!-- Load the wavesurferscript , in this case from a CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wavesurfer.js/1.3.7/wavesurfer.min.js"></script>
+
 
     <script>
 
@@ -154,7 +280,7 @@
         // Create an instance of wave surfer with its configuration
         var Spectrum = WaveSurfer.create({
             container: '#audio-spectrum',
-            waveColor: "#fff",
+            waveColor: "grey",
             progressColor: "#4b6cb7",
             barHeight: 3
 
@@ -169,11 +295,11 @@
             var selectedVoiceName = "Microsoft David Desktop - English (United States)"
             //voiceList.selectedOptions[0].getAttribute('data-name'); // set the selsected language
             voices.forEach((voice) => {
-                if (voice.name === selectedVoiceName) {// find the selected one 
+                if (voice.name === selectedVoiceName) {// find the selected one
                     toSpeak.voice = voice;
                 }
             });
-             tts.speak(toSpeak); 
+             tts.speak(toSpeak);
 
             // Enable/Disable respectively buttons
             buttons.stop.disabled = false;
@@ -248,12 +374,12 @@
             //voiceList.selectedOptions[0].getAttribute('data-name'); // set the selsected language
             // console.log(selectedVoiceName);
             voices.forEach((voice) => {
-                if (voice.name === selectedVoiceName) {// find the selected one 
+                if (voice.name === selectedVoiceName) {// find the selected one
                     toSpeak.voice = voice;
                 }
             });
 
-            // tts.speak(toSpeak); // speake the text 
+            // tts.speak(toSpeak); // speake the text
             // $("#hide").hide();
 
         })
@@ -273,7 +399,146 @@
         }
 
         Spectrum.load('FileName.mp3')
+
+
+// text img
+
+
+$(document).ready(function($) {
+  $(".sizes").on("click", function() {
+    var changeDiv = $(".post-content");
+    var fontSize = parseInt(changeDiv.css("font-size"));
+    var lineHeight = parseInt(changeDiv.css("line-height"));
+
+    function changeSize() {
+      if (parseInt(fontSize) < 36) {
+        if (parseInt(fontSize) > 13) {
+          changeDiv.css({ "font-size": fontSize });
+          changeDiv.css({ "line-height": lineHeight });
+        }
+      }
+    }
+    if ($(this).hasClass("increase")) {
+      fontSize = fontSize + 2 + "px";
+      lineHeight = lineHeight + 1 + "px";
+      changeSize();
+    } else {
+      fontSize = fontSize - 1 + "px";
+      lineHeight = lineHeight - 1 + "px";
+      changeSize();
+    }
+  });
+
+
+
+  document.querySelector("#ii").onchange = function() {
+  var url = URL.createObjectURL(this.files[0]);
+  // document.body.style.background = "url(" + url + ") no-repeat";
+  $(".ri").css("background-image", "url(" + url + ")");
+  }
+
+  document.getElementById("changeGreen").onclick = function(){
+    document.getElementById("output").style.color = 'green';
+    document.getElementById("output1").style.color = 'green';
+   
+    document.getElementById("output3").style.color = 'green';
+    document.getElementById("output4").style.color = 'green';
+  }
+
+  document.getElementById("changeRed").onclick = function(){
+    document.getElementById("output").style.color = 'red';
+    document.getElementById("output1").style.color = 'red';
+   
+    document.getElementById("output3").style.color = 'red';
+    document.getElementById("output4").style.color = 'red';
+  }
+  document.getElementById("changewhite").onclick = function(){
+    document.getElementById("output").style.color = 'white';
+    document.getElementById("output1").style.color = 'white';
+    
+    document.getElementById("output3").style.color = 'white';
+    document.getElementById("output4").style.color = 'white';
+  }
+
+  document.getElementById("changeblack").onclick = function(){
+    document.getElementById("output").style.color = 'black';
+    document.getElementById("output1").style.color = 'black';
+   
+    document.getElementById("output3").style.color = 'black';
+    document.getElementById("output4").style.color = 'black';
+  }
+  document.getElementById("changeyellow").onclick = function(){
+    document.getElementById("output").style.color = 'yellow';
+    document.getElementById("output1").style.color = 'yellow';
+    
+    document.getElementById("output3").style.color = 'yellow';
+    document.getElementById("output4").style.color = 'yellow';
+  }
+  document.getElementById("changeblue").onclick = function(){
+    document.getElementById("output").style.color = 'blue';
+    document.getElementById("output1").style.color = 'blue';
+    
+    document.getElementById("output3").style.color = 'blue';
+    document.getElementById("output4").style.color = 'blue';
+  }
+  document.getElementById("changepink").onclick = function(){
+    document.getElementById("output").style.color = '#ff69af';
+    document.getElementById("output1").style.color = '#ff69af';
+   
+    document.getElementById("output3").style.color = '#ff69af';
+    document.getElementById("output4").style.color = '#ff69af';
+  }
+  document.getElementById("changeultpink").onclick = function(){
+    document.getElementById("output").style.color = '#ff55ff';
+    document.getElementById("output1").style.color = '#ff55ff';
+    
+    document.getElementById("output3").style.color = '#ff55ff';
+    document.getElementById("output4").style.color = '#ff55ff';
+  }
+  document.getElementById("changepurple").onclick = function(){
+    document.getElementById("output").style.color = '#bc64a4';
+    document.getElementById("output1").style.color = '#bc64a4';
+   
+    document.getElementById("output3").style.color = '#bc64a4';
+    document.getElementById("output4").style.color = '#bc64a4';
+  }
+  document.getElementById("changedodly").onclick = function(){
+    document.getElementById("output").style.color = '#4d5a6b';
+    document.getElementById("output1").style.color = '#4d5a6b';
+    
+    document.getElementById("output3").style.color = '#4d5a6b';
+    document.getElementById("output4").style.color = '#4d5a6b';
+}
+
+
+});
+
+
+// ss
+function makeScreenshot()
+      {
+          html2canvas(document.getElementById("screenshot"), {scale: 1.5}).then(canvas =>
+          {
+              canvas.id = "canvasID";
+              document.getElementById("a-download").style.display = 'inline-block';
+              document.getElementById("make").style.display = 'none';
+              var main = document.getElementById("main");
+              while (main.firstChild) { main.removeChild(main.firstChild); }
+              main.appendChild(canvas);
+          });
+      }
+      document.getElementById("a-download").addEventListener('click', function()
+      {
+          console.log("juhksd")
+          this.href = document.getElementById("canvasID").toDataURL();
+          this.download = "canvas-image.png";
+      }, false);
+
+
+
     </script>
+
+
 </body>
 
 </html>

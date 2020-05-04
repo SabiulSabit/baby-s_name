@@ -2,7 +2,6 @@ const express = require('express');
 var txtomp3 = require("text-to-mp3");
 const fs = require('fs');
 const path = require('path');
-const webshot = require('webshot');
 const body = require('body-parser');
 
 const app = express();
@@ -24,11 +23,14 @@ app.use(express.static(path.join(__dirname, '/public')));
 
 
 app.get('/', (req, res) => {
-  res.render('index');
+  res.render('home');
 
 })
 app.post('/generate', (req, res) => {
-  var msg = req.body.msg;
+ var msg = req.body.name;
+ var height = req.body.height;
+ var weight = req.body.weight;
+ var date = req.body.date;
 
   // console.log(msg);
   txtomp3.getMp3(msg, function (err, binaryStream) {
@@ -40,12 +42,7 @@ app.post('/generate', (req, res) => {
     file.write(binaryStream);
     file.end();
 
-    webshot('http://localhost:3000/','a.png' ,function(err){
-      if(err) throw err;
-      else console.log("SS done")
-    })
-
-    res.render("index");
+    res.render("index",{name: msg,height:height,weight:weight,date:date});
 
   });
 
