@@ -55,7 +55,7 @@
 
     .box {
       margin-top: 50px;
-      box-shadow: 2px 0px 8px -3px black;
+      /* box-shadow: 2px 0px 8px -3px black; */
     }
 
     .properties {
@@ -174,6 +174,7 @@
     .contentposition {
       margin-top: 50px;
     }
+    
   </style>
 
 </head>
@@ -292,7 +293,7 @@
           <div class="col-12">
             <div class="properties post-content" id="output">
               <p class="text-center p-3" id="output1"><%=date%> <span style="margin-left: 5px;"><%=height%>cm</span> <span
-                  style="margin-left: 5px;"><%=weight%>kg</span> </p>
+                  style="margin-left: 5px;"><%=weight%>gramm</span> </p>
             </div>
           </div>
 
@@ -321,7 +322,8 @@
     var Spectrum = WaveSurfer.create({
       container: '#audio-spectrum',
       waveColor: "grey",
-      progressColor: "#4b6cb7",
+      progressColor: "grey",
+      cursorColor: "white" ,
       barHeight: 3
 
     });
@@ -478,6 +480,9 @@
       }
 
       document.getElementById("changeGreen").onclick = function () {
+        Spectrum.params.waveColor = 'green';
+        Spectrum.params.progressColor = 'green';
+        Spectrum.drawBuffer();
         document.getElementById("output").style.color = 'green';
         document.getElementById("output1").style.color = 'green';
         document.getElementById("output3").style.color = 'green';
@@ -485,12 +490,18 @@
       }
 
       document.getElementById("changeRed").onclick = function () {
+        Spectrum.params.waveColor = 'red';
+        Spectrum.params.progressColor = 'red';
+        Spectrum.drawBuffer();
         document.getElementById("output").style.color = 'red';
         document.getElementById("output1").style.color = 'red';
         document.getElementById("output3").style.color = 'red';
         document.getElementById("output4").style.color = 'red';
       }
       document.getElementById("changewhite").onclick = function () {
+        Spectrum.params.waveColor = 'white';
+        Spectrum.params.progressColor = 'white';
+        Spectrum.drawBuffer();
         document.getElementById("output").style.color = 'white';
         document.getElementById("output1").style.color = 'white';
         document.getElementById("output3").style.color = 'white';
@@ -498,72 +509,108 @@
       }
 
       document.getElementById("changeblack").onclick = function () {
+        Spectrum.params.waveColor = 'black';
+        Spectrum.params.progressColor = 'black';
+        Spectrum.drawBuffer();
         document.getElementById("output").style.color = 'black';
         document.getElementById("output1").style.color = 'black';
         document.getElementById("output3").style.color = 'black';
         document.getElementById("output4").style.color = 'black';
       }
       document.getElementById("changeyellow").onclick = function () {
+        Spectrum.params.waveColor = 'yellow';
+        Spectrum.params.progressColor = 'yellow';
+        Spectrum.drawBuffer();
         document.getElementById("output").style.color = 'yellow';
         document.getElementById("output1").style.color = 'yellow';
         document.getElementById("output3").style.color = 'yellow';
         document.getElementById("output4").style.color = 'yellow';
       }
       document.getElementById("changeblue").onclick = function () {
+        Spectrum.params.waveColor = 'blue';
+        Spectrum.params.progressColor = 'blue';
+        Spectrum.drawBuffer();
         document.getElementById("output").style.color = 'blue';
         document.getElementById("output1").style.color = 'blue';
         document.getElementById("output3").style.color = 'blue';
         document.getElementById("output4").style.color = 'blue';
       }
       document.getElementById("changepink").onclick = function () {
+        Spectrum.params.waveColor = '#ff69af';
+        Spectrum.params.progressColor = '#ff69af';
+        Spectrum.drawBuffer();
         document.getElementById("output").style.color = '#ff69af';
         document.getElementById("output1").style.color = '#ff69af';
         document.getElementById("output3").style.color = '#ff69af';
         document.getElementById("output4").style.color = '#ff69af';
       }
       document.getElementById("changeultpink").onclick = function () {
+        Spectrum.params.waveColor = '#ff55ff';
+        Spectrum.params.progressColor = '#ff55ff';
+        Spectrum.drawBuffer();
         document.getElementById("output").style.color = '#ff55ff';
         document.getElementById("output1").style.color = '#ff55ff';
         document.getElementById("output3").style.color = '#ff55ff';
         document.getElementById("output4").style.color = '#ff55ff';
       }
       document.getElementById("changepurple").onclick = function () {
+        Spectrum.params.waveColor = '#bc64a4';
+        Spectrum.params.progressColor = '#bc64a4';
+        Spectrum.drawBuffer();
         document.getElementById("output").style.color = '#bc64a4';
         document.getElementById("output1").style.color = '#bc64a4';
         document.getElementById("output3").style.color = '#bc64a4';
         document.getElementById("output4").style.color = '#bc64a4';
       }
       document.getElementById("changedodly").onclick = function () {
+        Spectrum.params.waveColor = '#4d5a6b';
+        Spectrum.params.progressColor = '#4d5a6b';
+        Spectrum.drawBuffer();
         document.getElementById("output").style.color = '#4d5a6b';
         document.getElementById("output1").style.color = '#4d5a6b';
         document.getElementById("output3").style.color = '#4d5a6b';
         document.getElementById("output4").style.color = '#4d5a6b';
       }
       document.getElementById("changetur").onclick = function () {
+        Spectrum.params.waveColor = '#1abc9c';
+        Spectrum.params.progressColor = '#1abc9c';
+        Spectrum.drawBuffer();
         document.getElementById("output").style.color = '#1abc9c';
         document.getElementById("output1").style.color = '#1abc9c';
         document.getElementById("output3").style.color = '#1abc9c';
         document.getElementById("output4").style.color = '#1abc9c';
       }
       document.getElementById("changelef").onclick = function () {
+        Spectrum.params.waveColor = '#7158e2';
+        Spectrum.params.progressColor = '#7158e2';
+        Spectrum.drawBuffer();
         document.getElementById("output").style.color = '#7158e2';
         document.getElementById("output1").style.color = '#7158e2';
         document.getElementById("output3").style.color = '#7158e2';
         document.getElementById("output4").style.color = '#7158e2';
       }
       document.getElementById("changeorg").onclick = function () {
+        Spectrum.params.waveColor = '#ff5e57';
+        Spectrum.params.progressColor = '#ff5e57';
+        Spectrum.drawBuffer();
         document.getElementById("output").style.color = '#ff5e57';
         document.getElementById("output1").style.color = '#ff5e57';
         document.getElementById("output3").style.color = '#ff5e57';
         document.getElementById("output4").style.color = '#ff5e57';
       }
       document.getElementById("changesky").onclick = function () {
+        Spectrum.params.waveColor = '#34ace0';
+        Spectrum.params.progressColor = '#34ace0';
+        Spectrum.drawBuffer();
         document.getElementById("output").style.color = '#34ace0';
         document.getElementById("output1").style.color = '#34ace0';
         document.getElementById("output3").style.color = '#34ace0';
         document.getElementById("output4").style.color = '#34ace0';
       }
       document.getElementById("changeskyblue").onclick = function () {
+        Spectrum.params.waveColor = '#7efff5';
+        Spectrum.params.progressColor = '#7efff5';
+        Spectrum.drawBuffer();
         document.getElementById("output").style.color = '#7efff5';
         document.getElementById("output1").style.color = '#7efff5';
         document.getElementById("output3").style.color = '#7efff5';
