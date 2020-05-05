@@ -36,9 +36,9 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
 
 
 
@@ -49,14 +49,17 @@
       background-color: whitesmoke;
       /* background: url('1.jpg')no-repeat center center fixed; */
     }
+
     .position {
       margin-left: 50%;
       transform: translate(-50%, 0);
     }
+
     .box {
       margin-top: 50px;
       /* box-shadow: 2px 0px 8px -3px black; */
     }
+
     /* .properties {
       margin-bottom: 40px;
     }
@@ -66,51 +69,67 @@
     .wave {
       background-color: aquamarine !important;
     }
+
     .color1 {
       background-color: green;
     }
+
     .color2 {
       background-color: red;
     }
+
     .color3 {
       background-color: white;
     }
+
     .color4 {
       background-color: black;
     }
+
     .color5 {
       background-color: yellow;
     }
+
     .color6 {
       background-color: blue;
     }
+
     .color7 {
       background-color: #ff69af;
     }
+
     .color8 {
       background-color: #ff55ff;
     }
+
     .color9 {
       background-color: #bc64a4;
     }
+
     .color10 {
       background-color: #4d5a6b;
     }
+
     .color11 {
       background-color: #1abc9c;
     }
+
     .color12 {
       background-color: #7158e2;
     }
+
     .color13 {
       background-color: #ff5e57;
     }
+
     .color14 {
       background-color: #34ace0;
     }
+
     .color15 {
       background-color: #7efff5;
     }
+
     .ri {
       width: 100%;
       height: 600px;
@@ -118,37 +137,45 @@
       margin-bottom: 50px;
       margin-top: 50px;
     }
-    .ri p{
+
+    .ri p {
       margin-top: 250px;
     }
+
     .infot a {
       text-decoration: none;
     }
+
     .colorposition {
       width: 50%;
       /* height: 100px; */
       margin-left: 50%;
       transform: translate(-50%, 0);
     }
+
     .textposition {
       margin-left: 50%;
       transform: translate(-50%, 0);
     }
+
     .textposition i {
       float: left;
       border-radius: 50%;
     }
+
     .textposition i:hover {
       /* background-color: red; */
       transform: scale(1.2);
     }
+
     .contentposition {
       margin-top: 30px;
     }
-.fontposition{
-  margin-left: 50%;
-  transform: translate(-50%, 0);
-}
+
+    .fontposition {
+      margin-left: 50%;
+      transform: translate(-50%, 0);
+    }
   </style>
 
 </head>
@@ -179,7 +206,7 @@
           <input class="color14" type="submit" id="changesky" value="">
           <input class="color15" type="submit" id="changeskyblue" value="">
         </div>
-          <p class="text-center" style="font-size: 20px;">Wave Color change: </p>
+        <p class="text-center" style="font-size: 20px;">Wave Color change: </p>
         <div class="colorposition">
           <input class="color1" type="submit" id="waveGreen" value="">
           <input class="color2" type="submit" id="waveRed" value="">
@@ -203,62 +230,62 @@
       </div>
 
       <div class="col-lg-3">
-<p class="text-center" style="font-size: 20px;">Baby name font style</p>
-          <div class="fontposition">
+        <p class="text-center" style="font-size: 20px;">Baby name font style</p>
+        <div class="fontposition">
 
-            <select onchange="ChangeFont (this);" size="10">
-                <option />gill
-                <option />helvetica
-                <option />cursive
-                <option />fantasy
-                <option selected="selected" />serif
-                <option />sans-serif
-                <option />monospace
-                <option />Modak
-                <option />Dancing Script
-                <option />Satisfy
+          <select onchange="ChangeFont (this);" size="10">
+            <option />gill
+            <option />helvetica
+            <option />cursive
+            <option />fantasy
+            <option selected="selected" />serif
+            <option />sans-serif
+            <option />monospace
+            <option />Modak
+            <option />Dancing Script
+            <option />Satisfy
 
-            </select>
+          </select>
+        </div>
+        <p class="text-center" style="font-size: 18px; margin-top: 10px;">Baby Text size decrease/increase: </p>
+        <div class="text-size textposition">
+          <div class="babysizes decrease">
+            <i class="btn fa fa-minus-circle" style="font-size: 35px;"></i>
           </div>
-            <p class="text-center" style="font-size: 18px; margin-top: 10px;">Baby Text size decrease/increase: </p>
-            <div class="text-size textposition">
-              <div class="babysizes decrease">
-                <i class="btn fa fa-minus-circle" style="font-size: 35px;"></i>
-              </div>
-              <div class="babysizes increase">
-                <i class="btn fa fa-plus-circle" style="font-size: 35px;"></i>
-              </div>
-            </div>
+          <div class="babysizes increase">
+            <i class="btn fa fa-plus-circle" style="font-size: 35px;"></i>
+          </div>
+        </div>
 
       </div>
       <div class="col-lg-3">
-<p class="text-center" style="font-size: 20px;">Bottom font style</p>
-            <div class="fontposition">
+        <p class="text-center" style="font-size: 20px;">Bottom font style</p>
+        <div class="fontposition">
 
-              <select onchange="ChangeFont1 (this);" size="10">
-                <option />gill
-                <option />helvetica
-                <option />cursive
-                <option />fantasy
-                <option selected="selected" />serif
-                <option />sans-serif
-                <option />monospace
-                <option />Modak
-                <option />Dancing Script
-                <option />Satisfy
-              </select>
-            </div>
+          <select onchange="ChangeFont1 (this);" size="10">
+            <option />gill
+            <option />helvetica
+            <option />cursive
+            <option />fantasy
+            <option selected="selected" />serif
+            <option />sans-serif
+            <option />monospace
+            <option />Modak
+            <option />Dancing Script
+            <option />Satisfy
+          </select>
+        </div>
 
 
-                    <p class="text-center" style="font-size: 20px; margin-top: 10px;">Bottom Text size decrease/increase: </p>
-                    <div class="text-size textposition">
-                      <div class="sizes decrease">
-                        <i class="btn fa fa-minus-circle" style="font-size: 35px;"></i>
-                      </div>
-                      <div class="sizes increase">
-                        <i class="btn fa fa-plus-circle" style="font-size: 35px;"></i>
-                      </div>
-                    </div>
+        <p class="text-center" style="font-size: 20px; margin-top: 10px;">Bottom Text size decrease/increase: </p>
+        <div class="text-size textposition">
+          <div class="sizes decrease">
+            <i class="btn fa fa-minus-circle" style="font-size: 35px;"></i>
+          </div>
+          <div class="sizes increase">
+            <i class="btn fa fa-plus-circle" style="font-size: 35px;"></i>
+          </div>
+        </div>
       </div>
       <div class="col-lg-3">
         <p style="font-size: 20px;">Select a Background Image</p>
@@ -267,27 +294,21 @@
         <button class="btn btn-lg btn-info" id='make' onclick="makeScreenshot();">Create Image</button>
 
         <a id="a-download" class="btn btn-lg btn-success" style="display: none;">Download The File</a>
-        <a href="/" id="editpic" class="btn btn-lg btn-primary" >Edit again</a>
+        <a href="/" id="editpic" class="btn btn-lg btn-primary">Edit again</a>
       </div>
 
     </div>
   </div>
 
-
   <h2 class="text-center text-danger"> <b>Live Preview </b></h2>
-
-
   <div id="main">
     <div id="screenshot">
       <div class="container">
         <div class="row ri">
 
-
           <div class="col-12 upor">
 
-
             <span class="text-center" id="hide">
-
 
               <div class="position" hidden>
                 <span class="text-center" style="font-size: 20px;">Select Voice:</span> <select
@@ -297,9 +318,9 @@
               <form action="/generate" method="POST">
 
                 <p class="post-content1" id="output"
-                  style="margin-left: 50%; margin-top: 50px; font-weight: 600; transform: translate(-50%, 0);"> <span id="fontTest"><%=name%></span>
+                  style="margin-left: 50%; margin-top: 50px; font-weight: 600; transform: translate(-50%, 0);"> <span
+                    id="fontTest"><%=name%></span>
                 </p>
-
 
                 <input style="width: 300px;height: 40px;" type="text" id="inputText" placeholder="Baby's Name"
                   name="msg" hidden>
@@ -311,8 +332,6 @@
               </form>
             </span>
           </div>
-
-
 
           <!-- Create a div where the audio waves will be shown -->
           <div class="box" id="audio-spectrum" class="wave"></div>
@@ -328,16 +347,11 @@
             <button style="font-size: 20px;" type="button" id="btn-stop" disabled="disabled" hidden> <i
                 class="fa fa-stop" style="font-size: 25px;"> </i> Stop</button>
           </div>
-
-
-
-            <div class="post-content" id="fontTest output">
-              <p class="text-center p-3" id="output1"> <span id="fontTest1"><%=date%> </span><span id="fontTest2" style="margin-left: 5px;"><%=height%>cm</span> <span  id="fontTest3"
-                  style="margin-left: 5px;"><%=weight%>gm</span> </p>
-            </div>
-
-
-
+          <div class="post-content" id="fontTest output">
+            <p class="text-center p-3" id="output1"> <span id="fontTest1"><%=date%> </span><span id="fontTest2"
+                style="margin-left: 5px;"><%=height%>cm</span> <span id="fontTest3"
+                style="margin-left: 5px;"><%=weight%>gm</span> </p>
+          </div>
         </div>
       </div>
     </div>
@@ -361,7 +375,7 @@
       container: '#audio-spectrum',
       waveColor: "grey",
       progressColor: "grey",
-      cursorColor: "white" ,
+      cursorColor: "white",
       barHeight: 3
     });
     // Handle Play button
@@ -509,77 +523,77 @@
         $(".ri").css("background-image", "url(" + url + ")");
       }
 
-      document.getElementById("waveGreen").onclick = function (){
+      document.getElementById("waveGreen").onclick = function () {
         Spectrum.params.waveColor = 'green';
         Spectrum.params.progressColor = 'green';
         Spectrum.drawBuffer();
       }
-      document.getElementById("waveRed").onclick = function (){
+      document.getElementById("waveRed").onclick = function () {
         Spectrum.params.waveColor = 'red';
         Spectrum.params.progressColor = 'red';
         Spectrum.drawBuffer();
       }
-      document.getElementById("wavewhite").onclick = function (){
+      document.getElementById("wavewhite").onclick = function () {
         Spectrum.params.waveColor = 'white';
         Spectrum.params.progressColor = 'white';
         Spectrum.drawBuffer();
       }
-      document.getElementById("waveblack").onclick = function (){
+      document.getElementById("waveblack").onclick = function () {
         Spectrum.params.waveColor = 'black';
         Spectrum.params.progressColor = 'black';
         Spectrum.drawBuffer();
       }
-      document.getElementById("waveyellow").onclick = function (){
+      document.getElementById("waveyellow").onclick = function () {
         Spectrum.params.waveColor = 'yellow';
         Spectrum.params.progressColor = 'yellow';
         Spectrum.drawBuffer();
       }
-      document.getElementById("waveblue").onclick = function (){
+      document.getElementById("waveblue").onclick = function () {
         Spectrum.params.waveColor = 'blue';
         Spectrum.params.progressColor = 'blue';
         Spectrum.drawBuffer();
       }
-      document.getElementById("wavepink").onclick = function (){
+      document.getElementById("wavepink").onclick = function () {
         Spectrum.params.waveColor = '#ff69af';
         Spectrum.params.progressColor = '#ff69af';
         Spectrum.drawBuffer();
       }
-      document.getElementById("waveultpink").onclick = function (){
+      document.getElementById("waveultpink").onclick = function () {
         Spectrum.params.waveColor = '#ff55ff';
         Spectrum.params.progressColor = '#ff55ff';
         Spectrum.drawBuffer();
       }
-      document.getElementById("wavepurple").onclick = function (){
+      document.getElementById("wavepurple").onclick = function () {
         Spectrum.params.waveColor = '#bc64a4';
         Spectrum.params.progressColor = '#bc64a4';
         Spectrum.drawBuffer();
       }
-      document.getElementById("wavedodly").onclick = function (){
+      document.getElementById("wavedodly").onclick = function () {
         Spectrum.params.waveColor = '#4d5a6b';
         Spectrum.params.progressColor = '#4d5a6b';
         Spectrum.drawBuffer();
       }
-      document.getElementById("wavetur").onclick = function (){
+      document.getElementById("wavetur").onclick = function () {
         Spectrum.params.waveColor = '#1abc9c';
         Spectrum.params.progressColor = '#1abc9c';
         Spectrum.drawBuffer();
       }
-      document.getElementById("wavelef").onclick = function (){
+      document.getElementById("wavelef").onclick = function () {
         Spectrum.params.waveColor = '#7158e2';
         Spectrum.params.progressColor = '#7158e2';
         Spectrum.drawBuffer();
       }
-      document.getElementById("waveorg").onclick = function (){
+      document.getElementById("waveorg").onclick = function () {
         Spectrum.params.waveColor = '#ff5e57';
         Spectrum.params.progressColor = '#ff5e57';
         Spectrum.drawBuffer();
       }
-      document.getElementById("wavesky").onclick = function (){
+      document.getElementById("wavesky").onclick = function () {
         Spectrum.params.waveColor = '#34ace0';
         Spectrum.params.progressColor = '#34ace0';
         Spectrum.drawBuffer();
       }
-      document.getElementById("waveskyblue").onclick = function (){
+      document.getElementById("waveskyblue").onclick = function () {
         Spectrum.params.waveColor = '#7efff5';
         Spectrum.params.progressColor = '#7efff5';
         Spectrum.drawBuffer();
@@ -711,28 +725,28 @@
     }, false);
 
 
-    function ChangeFont (selectTag) {
-            var whichSelected = selectTag.selectedIndex;
-            var selectState = selectTag.options[whichSelected].text;
+    function ChangeFont(selectTag) {
+      var whichSelected = selectTag.selectedIndex;
+      var selectState = selectTag.options[whichSelected].text;
 
-            var fontTest = document.getElementById ("fontTest");
+      var fontTest = document.getElementById("fontTest");
 
-            fontTest.style.fontFamily = selectState;
+      fontTest.style.fontFamily = selectState;
 
-        }
-        function ChangeFont1 (selectTag) {
-                var whichSelected = selectTag.selectedIndex;
-                var selectState = selectTag.options[whichSelected].text;
+    }
+    function ChangeFont1(selectTag) {
+      var whichSelected = selectTag.selectedIndex;
+      var selectState = selectTag.options[whichSelected].text;
 
 
-                var fontTest1 = document.getElementById ("fontTest1");
-                var fontTest2 = document.getElementById ("fontTest2");
-                var fontTest3 = document.getElementById ("fontTest3");
+      var fontTest1 = document.getElementById("fontTest1");
+      var fontTest2 = document.getElementById("fontTest2");
+      var fontTest3 = document.getElementById("fontTest3");
 
-                fontTest1.style.fontFamily = selectState;
-                fontTest2.style.fontFamily = selectState;
-                fontTest3.style.fontFamily = selectState;
-            }
+      fontTest1.style.fontFamily = selectState;
+      fontTest2.style.fontFamily = selectState;
+      fontTest3.style.fontFamily = selectState;
+    }
 
   </script>
 
