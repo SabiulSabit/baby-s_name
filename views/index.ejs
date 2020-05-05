@@ -36,106 +36,81 @@
   <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
 
 
 
   <script src="html2canvas.min.js"></script>
   <style>
     body {
-      font-family: 'Raleway', 'Roboto';
+      /* font-family: 'Raleway', 'Roboto'; */
       background-color: whitesmoke;
       /* background: url('1.jpg')no-repeat center center fixed; */
-
     }
-
     .position {
       margin-left: 50%;
       transform: translate(-50%, 0);
     }
-
     .box {
       margin-top: 50px;
       /* box-shadow: 2px 0px 8px -3px black; */
     }
-
-    .properties {
-      margin-top: 40px;
-      /* margin-left: 50%;
-            transform: translate(-50%, 0); */
+    /* .properties {
+      margin-bottom: 40px;
     }
-
     .properties p {
-      margin: 20px;
-      /* float: left; */
-      /* font-size: 20px; */
-      /* margin: 20px; */
-      font-family: 'Oswald', sans-serif;
-    }
-
+      margin-bottom: 20px;
+    } */
     .wave {
       background-color: aquamarine !important;
     }
-
     .color1 {
       background-color: green;
     }
-
     .color2 {
       background-color: red;
     }
-
     .color3 {
       background-color: white;
     }
-
     .color4 {
       background-color: black;
     }
-
     .color5 {
       background-color: yellow;
     }
-
     .color6 {
       background-color: blue;
     }
-
     .color7 {
       background-color: #ff69af;
     }
-
     .color8 {
       background-color: #ff55ff;
     }
-
     .color9 {
       background-color: #bc64a4;
     }
-
     .color10 {
       background-color: #4d5a6b;
     }
-
     .color11 {
       background-color: #1abc9c;
     }
-
     .color12 {
       background-color: #7158e2;
     }
-
     .color13 {
       background-color: #ff5e57;
     }
-
     .color14 {
       background-color: #34ace0;
     }
-
     .color15 {
       background-color: #7efff5;
     }
-
     .ri {
       width: 100%;
       height: 600px;
@@ -143,38 +118,37 @@
       margin-bottom: 50px;
       margin-top: 50px;
     }
-
+    .ri p{
+      margin-top: 250px;
+    }
     .infot a {
       text-decoration: none;
-
     }
-
     .colorposition {
-      width: 110px;
+      width: 50%;
       /* height: 100px; */
       margin-left: 50%;
       transform: translate(-50%, 0);
     }
-
     .textposition {
       margin-left: 50%;
       transform: translate(-50%, 0);
     }
-
     .textposition i {
       float: left;
       border-radius: 50%;
     }
-
     .textposition i:hover {
       /* background-color: red; */
       transform: scale(1.2);
     }
-
     .contentposition {
-      margin-top: 50px;
+      margin-top: 30px;
     }
-    
+.fontposition{
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+}
   </style>
 
 </head>
@@ -185,7 +159,7 @@
   <div class="container contentposition">
     <div class="row">
 
-      <div class="col-lg-4">
+      <div class="col-lg-3">
         <p class="text-center" style="font-size: 20px;">Text Color change: </p>
 
         <div class="colorposition">
@@ -205,22 +179,88 @@
           <input class="color14" type="submit" id="changesky" value="">
           <input class="color15" type="submit" id="changeskyblue" value="">
         </div>
-
-        <p class="text-center" style="font-size: 20px;">Text size increase/decrease: </p>
-        <div class="text-size textposition">
-          <div class="sizes decrease">
-            <i class="btn fa fa-minus-circle" style="font-size: 35px; margin-left: 25px;"></i>
-          </div>
-          <div class="sizes increase">
-            <i class="btn fa fa-plus-circle" style="font-size: 35px; margin-left: 10px;"></i>
-          </div>
+          <p class="text-center" style="font-size: 20px;">Wave Color change: </p>
+        <div class="colorposition">
+          <input class="color1" type="submit" id="waveGreen" value="">
+          <input class="color2" type="submit" id="waveRed" value="">
+          <input class="color3" type="submit" id="wavewhite" value="">
+          <input class="color4" type="submit" id="waveblack" value="">
+          <input class="color5" type="submit" id="waveyellow" value="">
+          <input class="color6" type="submit" id="waveblue" value="">
+          <input class="color7" type="submit" id="wavepink" value="">
+          <input class="color8" type="submit" id="waveultpink" value="">
+          <input class="color9" type="submit" id="wavepurple" value="">
+          <input class="color10" type="submit" id="wavedodly" value="">
+          <input class="color11" type="submit" id="wavetur" value="">
+          <input class="color12" type="submit" id="wavelef" value="">
+          <input class="color13" type="submit" id="waveorg" value="">
+          <input class="color14" type="submit" id="wavesky" value="">
+          <input class="color15" type="submit" id="waveskyblue" value="">
         </div>
+
+
+
       </div>
 
-      <div class="col-lg-4">
+      <div class="col-lg-3">
+<p class="text-center" style="font-size: 20px;">Baby name font style</p>
+          <div class="fontposition">
+
+            <select onchange="ChangeFont (this);" size="10">
+                <option />gill
+                <option />helvetica
+                <option />cursive
+                <option />fantasy
+                <option selected="selected" />serif
+                <option />sans-serif
+                <option />monospace
+                <option />Modak
+                <option />Dancing Script
+                <option />Satisfy
+
+            </select>
+          </div>
+            <p class="text-center" style="font-size: 18px; margin-top: 10px;">Baby Text size decrease/increase: </p>
+            <div class="text-size textposition">
+              <div class="babysizes decrease">
+                <i class="btn fa fa-minus-circle" style="font-size: 35px;"></i>
+              </div>
+              <div class="babysizes increase">
+                <i class="btn fa fa-plus-circle" style="font-size: 35px;"></i>
+              </div>
+            </div>
 
       </div>
-      <div class="col-lg-4">
+      <div class="col-lg-3">
+<p class="text-center" style="font-size: 20px;">Bottom font style</p>
+            <div class="fontposition">
+
+              <select onchange="ChangeFont1 (this);" size="10">
+                <option />gill
+                <option />helvetica
+                <option />cursive
+                <option />fantasy
+                <option selected="selected" />serif
+                <option />sans-serif
+                <option />monospace
+                <option />Modak
+                <option />Dancing Script
+                <option />Satisfy
+              </select>
+            </div>
+
+
+                    <p class="text-center" style="font-size: 20px; margin-top: 10px;">Bottom Text size decrease/increase: </p>
+                    <div class="text-size textposition">
+                      <div class="sizes decrease">
+                        <i class="btn fa fa-minus-circle" style="font-size: 35px;"></i>
+                      </div>
+                      <div class="sizes increase">
+                        <i class="btn fa fa-plus-circle" style="font-size: 35px;"></i>
+                      </div>
+                    </div>
+      </div>
+      <div class="col-lg-3">
         <p style="font-size: 20px;">Select a Background Image</p>
         <input type="file" id="ii" name="" value="" style="margin-bottom: 20px;">
         <!-- <p style="font-size: 20px; margin-top: 10px;">Click for image</p> -->
@@ -256,8 +296,8 @@
               <br>
               <form action="/generate" method="POST">
 
-                <p class="post-content" id="output"
-                  style="margin-left: 50%; margin-top: 50px; font-weight: 600; transform: translate(-50%, 0);"><%=name%>
+                <p class="post-content1" id="output"
+                  style="margin-left: 50%; margin-top: 50px; font-weight: 600; transform: translate(-50%, 0);"> <span id="fontTest"><%=name%></span>
                 </p>
 
 
@@ -290,12 +330,12 @@
           </div>
 
 
-          <div class="col-12">
-            <div class="properties post-content" id="output">
-              <p class="text-center p-3" id="output1"><%=date%> <span style="margin-left: 5px;"><%=height%>cm</span> <span
+
+            <div class="post-content" id="fontTest output">
+              <p class="text-center p-3" id="output1"> <span id="fontTest1"><%=date%> </span><span id="fontTest2" style="margin-left: 5px;"><%=height%>cm</span> <span  id="fontTest3"
                   style="margin-left: 5px;"><%=weight%>gramm</span> </p>
             </div>
-          </div>
+
 
 
         </div>
@@ -309,7 +349,6 @@
 
 
   <script>
-
     var toSpeak;
     // Store the 3 buttons in some object
     var buttons = {
@@ -317,7 +356,6 @@
       pause: document.getElementById("btn-pause"),
       stop: document.getElementById("btn-stop")
     };
-
     // Create an instance of wave surfer with its configuration
     var Spectrum = WaveSurfer.create({
       container: '#audio-spectrum',
@@ -325,15 +363,11 @@
       progressColor: "grey",
       cursorColor: "white" ,
       barHeight: 3
-
     });
-
     // Handle Play button
     buttons.play.addEventListener("click", function () {
       Spectrum.play();
-
       toSpeak = new SpeechSynthesisUtterance(inputText.value); // speache request and info
-
       var selectedVoiceName = "Microsoft David Desktop - English (United States)"
       //voiceList.selectedOptions[0].getAttribute('data-name'); // set the selsected language
       voices.forEach((voice) => {
@@ -342,75 +376,56 @@
         }
       });
       tts.speak(toSpeak);
-
       // Enable/Disable respectively buttons
       buttons.stop.disabled = false;
       buttons.pause.disabled = false;
       buttons.play.disabled = true;
-
     }, false);
-
     // Handle Pause button
     buttons.pause.addEventListener("click", function () {
       Spectrum.pause();
-
       // Enable/Disable respectively buttons
       buttons.pause.disabled = true;
       buttons.play.disabled = false;
     }, false);
-
-
     // Handle Stop button
     buttons.stop.addEventListener("click", function () {
       Spectrum.stop();
-
       // Enable/Disable respectively buttons
       buttons.pause.disabled = true;
       buttons.play.disabled = false;
       buttons.stop.disabled = true;
     }, false);
-
-
     // Add a listener to enable the play button once it's ready
     Spectrum.on('ready', function () {
       buttons.play.disabled = false;
     });
-
     // If you want a responsive mode (so when the user resizes the window)
     // the spectrum will be still playable
     window.addEventListener("resize", function () {
       // Get the current progress according to the cursor position
       var currentProgress = Spectrum.getCurrentTime() / Spectrum.getDuration();
-
       // Reset graph
       Spectrum.empty();
       Spectrum.drawBuffer();
       // Set original position
       Spectrum.seekTo(currentProgress);
-
       // Enable/Disable respectively buttons
       buttons.pause.disabled = true;
       buttons.play.disabled = false;
       buttons.stop.disabled = false;
-
     }, false);
-
-
     var voiceList = document.querySelector('#voiceList');
     var inputText = document.querySelector('#inputText');
     var btnSpeak = document.querySelector('#btnSpeak');
     var tts = window.speechSynthesis; // get windows speech API
     var voices = [];   // list of all supported voice store here
-
     getVoices();
     if (speechSynthesis !== undefined) {
       speechSynthesis.onvoiceschanged = getVoices;
     }
-
     // button click
-
     btnSpeak.addEventListener('click', () => {
-
       var toSpeak = new SpeechSynthesisUtterance(inputText.value); // speache request and info
       var selectedVoiceName = "Microsoft David Desktop"
       //voiceList.selectedOptions[0].getAttribute('data-name'); // set the selsected language
@@ -420,13 +435,9 @@
           toSpeak.voice = voice;
         }
       });
-
       // tts.speak(toSpeak); // speake the text
       // $("#hide").hide();
-
     })
-
-
     function getVoices() {
       voices = tts.getVoices();
       voiceList.innerHTML = '';
@@ -439,19 +450,15 @@
       })
       voiceList.selectedIndex = 0;
     }
-
     Spectrum.load('FileName.mp3')
 
-
     // text img
-
-
     $(document).ready(function ($) {
+
       $(".sizes").on("click", function () {
         var changeDiv = $(".post-content");
         var fontSize = parseInt(changeDiv.css("font-size"));
         var lineHeight = parseInt(changeDiv.css("line-height"));
-
         function changeSize() {
           if (parseInt(fontSize) < 44) {
             if (parseInt(fontSize) > 13) {
@@ -471,155 +478,219 @@
         }
       });
 
+      // pnetext
 
+      $(".babysizes").on("click", function () {
+        var changeDiv = $(".post-content1");
+        var fontSize = parseInt(changeDiv.css("font-size"));
+        var lineHeight = parseInt(changeDiv.css("line-height"));
+        function changeSize() {
+          if (parseInt(fontSize) < 44) {
+            if (parseInt(fontSize) > 13) {
+              changeDiv.css({ "font-size": fontSize });
+              changeDiv.css({ "line-height": lineHeight });
+            }
+          }
+        }
+        if ($(this).hasClass("increase")) {
+          fontSize = fontSize + 2 + "px";
+          lineHeight = lineHeight + 1 + "px";
+          changeSize();
+        } else {
+          fontSize = fontSize - 1 + "px";
+          lineHeight = lineHeight - 1 + "px";
+          changeSize();
+        }
+      });
 
+      // background-image
       document.querySelector("#ii").onchange = function () {
         var url = URL.createObjectURL(this.files[0]);
-        // document.body.style.background = "url(" + url + ") no-repeat";
         $(".ri").css("background-image", "url(" + url + ")");
       }
 
-      document.getElementById("changeGreen").onclick = function () {
+      document.getElementById("waveGreen").onclick = function (){
         Spectrum.params.waveColor = 'green';
         Spectrum.params.progressColor = 'green';
         Spectrum.drawBuffer();
+      }
+      document.getElementById("waveRed").onclick = function (){
+        Spectrum.params.waveColor = 'red';
+        Spectrum.params.progressColor = 'red';
+        Spectrum.drawBuffer();
+      }
+      document.getElementById("wavewhite").onclick = function (){
+        Spectrum.params.waveColor = 'white';
+        Spectrum.params.progressColor = 'white';
+        Spectrum.drawBuffer();
+      }
+      document.getElementById("waveblack").onclick = function (){
+        Spectrum.params.waveColor = 'black';
+        Spectrum.params.progressColor = 'black';
+        Spectrum.drawBuffer();
+      }
+      document.getElementById("waveyellow").onclick = function (){
+        Spectrum.params.waveColor = 'yellow';
+        Spectrum.params.progressColor = 'yellow';
+        Spectrum.drawBuffer();
+      }
+      document.getElementById("waveblue").onclick = function (){
+        Spectrum.params.waveColor = 'blue';
+        Spectrum.params.progressColor = 'blue';
+        Spectrum.drawBuffer();
+      }
+      document.getElementById("wavepink").onclick = function (){
+        Spectrum.params.waveColor = '#ff69af';
+        Spectrum.params.progressColor = '#ff69af';
+        Spectrum.drawBuffer();
+      }
+      document.getElementById("waveultpink").onclick = function (){
+        Spectrum.params.waveColor = '#ff55ff';
+        Spectrum.params.progressColor = '#ff55ff';
+        Spectrum.drawBuffer();
+      }
+      document.getElementById("wavepurple").onclick = function (){
+        Spectrum.params.waveColor = '#bc64a4';
+        Spectrum.params.progressColor = '#bc64a4';
+        Spectrum.drawBuffer();
+      }
+      document.getElementById("wavedodly").onclick = function (){
+        Spectrum.params.waveColor = '#4d5a6b';
+        Spectrum.params.progressColor = '#4d5a6b';
+        Spectrum.drawBuffer();
+      }
+      document.getElementById("wavetur").onclick = function (){
+        Spectrum.params.waveColor = '#1abc9c';
+        Spectrum.params.progressColor = '#1abc9c';
+        Spectrum.drawBuffer();
+      }
+      document.getElementById("wavelef").onclick = function (){
+        Spectrum.params.waveColor = '#7158e2';
+        Spectrum.params.progressColor = '#7158e2';
+        Spectrum.drawBuffer();
+      }
+      document.getElementById("waveorg").onclick = function (){
+        Spectrum.params.waveColor = '#ff5e57';
+        Spectrum.params.progressColor = '#ff5e57';
+        Spectrum.drawBuffer();
+      }
+      document.getElementById("wavesky").onclick = function (){
+        Spectrum.params.waveColor = '#34ace0';
+        Spectrum.params.progressColor = '#34ace0';
+        Spectrum.drawBuffer();
+      }
+      document.getElementById("waveskyblue").onclick = function (){
+        Spectrum.params.waveColor = '#7efff5';
+        Spectrum.params.progressColor = '#7efff5';
+        Spectrum.drawBuffer();
+      }
+
+      document.getElementById("changeGreen").onclick = function () {
+
         document.getElementById("output").style.color = 'green';
         document.getElementById("output1").style.color = 'green';
         document.getElementById("output3").style.color = 'green';
         document.getElementById("output4").style.color = 'green';
       }
-
       document.getElementById("changeRed").onclick = function () {
-        Spectrum.params.waveColor = 'red';
-        Spectrum.params.progressColor = 'red';
-        Spectrum.drawBuffer();
+
         document.getElementById("output").style.color = 'red';
         document.getElementById("output1").style.color = 'red';
         document.getElementById("output3").style.color = 'red';
         document.getElementById("output4").style.color = 'red';
       }
       document.getElementById("changewhite").onclick = function () {
-        Spectrum.params.waveColor = 'white';
-        Spectrum.params.progressColor = 'white';
-        Spectrum.drawBuffer();
+
         document.getElementById("output").style.color = 'white';
         document.getElementById("output1").style.color = 'white';
         document.getElementById("output3").style.color = 'white';
         document.getElementById("output4").style.color = 'white';
       }
-
       document.getElementById("changeblack").onclick = function () {
-        Spectrum.params.waveColor = 'black';
-        Spectrum.params.progressColor = 'black';
-        Spectrum.drawBuffer();
+
         document.getElementById("output").style.color = 'black';
         document.getElementById("output1").style.color = 'black';
         document.getElementById("output3").style.color = 'black';
         document.getElementById("output4").style.color = 'black';
       }
       document.getElementById("changeyellow").onclick = function () {
-        Spectrum.params.waveColor = 'yellow';
-        Spectrum.params.progressColor = 'yellow';
-        Spectrum.drawBuffer();
+
         document.getElementById("output").style.color = 'yellow';
         document.getElementById("output1").style.color = 'yellow';
         document.getElementById("output3").style.color = 'yellow';
         document.getElementById("output4").style.color = 'yellow';
       }
       document.getElementById("changeblue").onclick = function () {
-        Spectrum.params.waveColor = 'blue';
-        Spectrum.params.progressColor = 'blue';
-        Spectrum.drawBuffer();
+
         document.getElementById("output").style.color = 'blue';
         document.getElementById("output1").style.color = 'blue';
         document.getElementById("output3").style.color = 'blue';
         document.getElementById("output4").style.color = 'blue';
       }
       document.getElementById("changepink").onclick = function () {
-        Spectrum.params.waveColor = '#ff69af';
-        Spectrum.params.progressColor = '#ff69af';
-        Spectrum.drawBuffer();
+
         document.getElementById("output").style.color = '#ff69af';
         document.getElementById("output1").style.color = '#ff69af';
         document.getElementById("output3").style.color = '#ff69af';
         document.getElementById("output4").style.color = '#ff69af';
       }
       document.getElementById("changeultpink").onclick = function () {
-        Spectrum.params.waveColor = '#ff55ff';
-        Spectrum.params.progressColor = '#ff55ff';
-        Spectrum.drawBuffer();
+
         document.getElementById("output").style.color = '#ff55ff';
         document.getElementById("output1").style.color = '#ff55ff';
         document.getElementById("output3").style.color = '#ff55ff';
         document.getElementById("output4").style.color = '#ff55ff';
       }
       document.getElementById("changepurple").onclick = function () {
-        Spectrum.params.waveColor = '#bc64a4';
-        Spectrum.params.progressColor = '#bc64a4';
-        Spectrum.drawBuffer();
+
         document.getElementById("output").style.color = '#bc64a4';
         document.getElementById("output1").style.color = '#bc64a4';
         document.getElementById("output3").style.color = '#bc64a4';
         document.getElementById("output4").style.color = '#bc64a4';
       }
       document.getElementById("changedodly").onclick = function () {
-        Spectrum.params.waveColor = '#4d5a6b';
-        Spectrum.params.progressColor = '#4d5a6b';
-        Spectrum.drawBuffer();
+
         document.getElementById("output").style.color = '#4d5a6b';
         document.getElementById("output1").style.color = '#4d5a6b';
         document.getElementById("output3").style.color = '#4d5a6b';
         document.getElementById("output4").style.color = '#4d5a6b';
       }
       document.getElementById("changetur").onclick = function () {
-        Spectrum.params.waveColor = '#1abc9c';
-        Spectrum.params.progressColor = '#1abc9c';
-        Spectrum.drawBuffer();
+
         document.getElementById("output").style.color = '#1abc9c';
         document.getElementById("output1").style.color = '#1abc9c';
         document.getElementById("output3").style.color = '#1abc9c';
         document.getElementById("output4").style.color = '#1abc9c';
       }
       document.getElementById("changelef").onclick = function () {
-        Spectrum.params.waveColor = '#7158e2';
-        Spectrum.params.progressColor = '#7158e2';
-        Spectrum.drawBuffer();
+
         document.getElementById("output").style.color = '#7158e2';
         document.getElementById("output1").style.color = '#7158e2';
         document.getElementById("output3").style.color = '#7158e2';
         document.getElementById("output4").style.color = '#7158e2';
       }
       document.getElementById("changeorg").onclick = function () {
-        Spectrum.params.waveColor = '#ff5e57';
-        Spectrum.params.progressColor = '#ff5e57';
-        Spectrum.drawBuffer();
+
         document.getElementById("output").style.color = '#ff5e57';
         document.getElementById("output1").style.color = '#ff5e57';
         document.getElementById("output3").style.color = '#ff5e57';
         document.getElementById("output4").style.color = '#ff5e57';
       }
       document.getElementById("changesky").onclick = function () {
-        Spectrum.params.waveColor = '#34ace0';
-        Spectrum.params.progressColor = '#34ace0';
-        Spectrum.drawBuffer();
+
         document.getElementById("output").style.color = '#34ace0';
         document.getElementById("output1").style.color = '#34ace0';
         document.getElementById("output3").style.color = '#34ace0';
         document.getElementById("output4").style.color = '#34ace0';
       }
       document.getElementById("changeskyblue").onclick = function () {
-        Spectrum.params.waveColor = '#7efff5';
-        Spectrum.params.progressColor = '#7efff5';
-        Spectrum.drawBuffer();
+
         document.getElementById("output").style.color = '#7efff5';
         document.getElementById("output1").style.color = '#7efff5';
         document.getElementById("output3").style.color = '#7efff5';
         document.getElementById("output4").style.color = '#7efff5';
       }
-
-
     });
-
 
     // ss
     function makeScreenshot() {
@@ -628,7 +699,6 @@
         document.getElementById("a-download").style.display = 'inline-block';
         document.getElementById("editpic").style.display = 'inline-block';
         document.getElementById("make").style.display = 'none';
-
         var main = document.getElementById("main");
         while (main.firstChild) { main.removeChild(main.firstChild); }
         main.appendChild(canvas);
@@ -641,6 +711,28 @@
     }, false);
 
 
+    function ChangeFont (selectTag) {
+            var whichSelected = selectTag.selectedIndex;
+            var selectState = selectTag.options[whichSelected].text;
+
+            var fontTest = document.getElementById ("fontTest");
+
+            fontTest.style.fontFamily = selectState;
+
+        }
+        function ChangeFont1 (selectTag) {
+                var whichSelected = selectTag.selectedIndex;
+                var selectState = selectTag.options[whichSelected].text;
+
+
+                var fontTest1 = document.getElementById ("fontTest1");
+                var fontTest2 = document.getElementById ("fontTest2");
+                var fontTest3 = document.getElementById ("fontTest3");
+
+                fontTest1.style.fontFamily = selectState;
+                fontTest2.style.fontFamily = selectState;
+                fontTest3.style.fontFamily = selectState;
+            }
 
   </script>
 
