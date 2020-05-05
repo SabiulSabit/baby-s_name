@@ -32,6 +32,10 @@ app.post('/generate', (req, res) => {
  var weight = req.body.weight;
  var date = req.body.date;
 
+ var r = date.split("-");
+ date = r[2]+"."+r[1]+"."+r[0];
+
+
   // console.log(msg);
   txtomp3.getMp3(msg, function (err, binaryStream) {
     if (err) {
@@ -45,7 +49,6 @@ app.post('/generate', (req, res) => {
     res.render("index",{name: msg,height:height,weight:weight,date:date});
 
   });
-
 
 })
 
