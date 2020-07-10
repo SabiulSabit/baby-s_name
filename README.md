@@ -13,3 +13,8 @@ After that user can upload an image as a background and update some feature of i
     <img src="demo.png" alt="Logo" width="450" height="450">
   </a>
 </p>
+
+## Technology used
+  
+  * Node.js (Back-end)
+  * HTML, CSS and Javascript(Front-end)
